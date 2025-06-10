@@ -59,6 +59,9 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'noreply@travelco.com'
+
 # AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
