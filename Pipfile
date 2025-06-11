@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django = "*"
+djangorestframework-simplejwt = {extras = ["blacklist"], version = "*"}
+djangorestframework = "*"
 
 [dev-packages]
 
