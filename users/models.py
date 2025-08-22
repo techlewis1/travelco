@@ -5,7 +5,6 @@ class CustomUser(AbstractUser):
     age = models.PositiveIntegerField(
         null=True,
         blank=True,
-        #help_text="Optional. Provide your age if you want."
     )
     preferred_travel_style = models.CharField(
         max_length=50,
@@ -18,7 +17,6 @@ class CustomUser(AbstractUser):
         ],
         blank=True,
         null=True,
-        #help_text="Optional. Choose your preferred travel style."
     )
     favorite_destinations = models.TextField(blank=True, null=True)
     travel_history = models.JSONField(blank=True, null=True) 
